@@ -1,4 +1,4 @@
-package com.example.citiclubapp.LoginActivity;
+package com.example.citiclubapp.SuccessfulRiges;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,20 +12,30 @@ import android.widget.EditText;
 import com.example.citiclubapp.R;
 import com.example.citiclubapp.RigesterActivity.RigesterActivity;
 
-public class LoginActivity extends AppCompatActivity {
-EditText editText_Name,editText_PassWord;               //初始化布局文件一些控件的对象
-    Button register_button,forget_password,button_login;
+public class SuccessfulRiges extends AppCompatActivity {
+
+    Button login2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        register_button=findViewById(R.id.regesiter_button);
-        register_button.setOnClickListener(new View.OnClickListener() {
-            @Override
+        setContentView(R.layout.activity_successful_riges);
+        login2 = findViewById(R.id.button_login2);
+
+        //准备转接下一个页面
+       /*  login2.setOnClickListener(new View.OnClickListener() {
+           @Override
             public void onClick(View view) {
-                Intent intent=new Intent(LoginActivity.this, RigesterActivity.class);
+               Intent intent = new Intent(  SuccessfulRiges.this,   .class);
                 startActivity(intent);
+                //finish();
             }
         });
+
+       */
     }
+
+
+
+
 }
+
